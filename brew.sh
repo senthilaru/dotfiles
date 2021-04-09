@@ -97,6 +97,7 @@ brew install tree
 brew install vbindiff
 brew install zopfli
 brew install gpg2
+brew install youtube-dl
 
 # Remove outdated versions from the cellar.
 brew cleanup
