@@ -1,0 +1,8 @@
+#### All my personal configs, go here..
+
+function config(){
+    git config --global user.name "Senthil,Selvam"
+    git config --global user.email "senthil.aru@gmail.com"
+    echo "git config updated"
+}
+config
