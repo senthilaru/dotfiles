@@ -1,16 +1,19 @@
 #### All my personal configs, go here..
 
-alias ssh-create="ssh-keygen -t rsa -C 'senthil.aru@gmail.com'"
-alias ytdl="youtube-dl "
+function myAlias(){
+    alias ssh-create="ssh-keygen -t rsa -C 'senthil.aru@gmail.com'"
+    alias ytdl="youtube-dl "
+}
+myAlias
 
-function config(){
+function myConfig(){
     git config --global user.name "Senthil,Selvam"
     git config --global user.email "senthil.aru@gmail.com"
     echo "git config updated"
 }
-config
+myConfig
 
-function sshUtil(){
+function mySshUtil(){
     eval "$(ssh-agent -s)"
 }
-sshUtil
+mySshUtil
