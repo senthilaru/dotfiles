@@ -9,11 +9,22 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
+alias d="cd ~/Documents"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
 alias g="git"
+alias repo="cd ~/Documents/repo"
+alias code='open -a "Visual Studio Code"'
+
+alias dki="docker images"
+alias dkir-all="docker images -q | xargs docker rmi "
+alias dkcr-all="docker ps -qa | xargs docker rm -f"
+alias dkrun="docker run -it "
+alias dkrun-latest="docker run -it $(docker images -q|head -1) /bin/bash"
+alias dkexe-latest="docker exec -it $(docker ps -lq) /bin/bash"
+
+
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
