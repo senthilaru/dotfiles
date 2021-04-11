@@ -10,6 +10,8 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 function myAlias(){
     alias ssh-create="ssh-keygen -t rsa -C 'senthil.aru@gmail.com'"
     alias ytdl="youtube-dl "
+    export JAVA_HOME=${HOME}/Documents/jdk-15.0.2
+    export PATH=$PATH:${HOME}/Documents/jdk-15.0.2/bin
 }
 myAlias
 
