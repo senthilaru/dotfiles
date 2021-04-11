@@ -98,6 +98,8 @@ brew install vbindiff
 brew install zopfli
 brew install gpg2
 brew install youtube-dl
+brew install openjdk
+brew install dotnet
 
 # Remove outdated versions from the cellar.
 brew cleanup
